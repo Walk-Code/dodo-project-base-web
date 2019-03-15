@@ -20,3 +20,46 @@
 4. 支持jsp输出。
 5. 支持freeMarker输出。
 6. 支持文本数据。
+
+> 使用示例（伪代码）
+```java
+@RestController
+public class yourModuleBaseController extends AbstractController{
+	/* 
+	* @Description: 输出文本 
+	* @Author: walk_code walk_code@163.com
+	* @Param: [] 
+	* @return: void  
+	* @Date: 2019/3/15 15:22
+	*/ 
+	public void outPutText(){
+		// 输出文本
+		renderText("something");
+	}
+	
+	/* 
+	* @Description: 输出json
+	* @Author: walk_code walk_code@163.com
+	* @Param: [] 
+	* @return: void  
+	* @Date: 2019/3/15 15:23
+	*/ 
+	public void outPutJson() {
+		renderJson(object);
+	}
+	
+	/* 
+	* @Description: 返回响应结果 
+	* @Author: walk_code walk_code@163.com
+	* @Param: [] 
+	* @return: void  
+	* @Date: 2019/3/15 15:24
+	*/ 
+	public void responseResult(){
+		responseResult(object);
+	}
+	
+	....
+}
+
+```
