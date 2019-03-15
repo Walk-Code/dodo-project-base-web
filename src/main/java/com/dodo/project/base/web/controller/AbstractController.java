@@ -906,6 +906,4 @@ public abstract class AbstractController extends AbstractRestController {
 
 		return "XMLHttpRequest".equals(requestWithHeader);
 	}
-
-
 }

@@ -14,7 +14,6 @@
     <artifactId>dodo-project-base-web</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <dependencies>
         <!-- start springboot核心支持 -->
         <dependency>
